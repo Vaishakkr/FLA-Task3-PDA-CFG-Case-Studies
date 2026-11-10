@@ -1,0 +1,24 @@
+digraph T {
+  node [fontname="Helvetica" fontsize=12 shape=plaintext];
+  edge [arrowhead=none];
+  labelloc="t"; label="Ambiguous grammar, tree 1"; fontname="Helvetica"; fontsize=13;
+  n0 [label="E"];
+  n1 [label="E"];
+  n2 [label="id" fontcolor="#1a5fb4"];
+  n1 -> n2;
+  n0 -> n1;
+  n3 [label="+" fontcolor="#1a5fb4"];
+  n0 -> n3;
+  n4 [label="E"];
+  n5 [label="E"];
+  n6 [label="id" fontcolor="#1a5fb4"];
+  n5 -> n6;
+  n4 -> n5;
+  n7 [label="*" fontcolor="#1a5fb4"];
+  n4 -> n7;
+  n8 [label="E"];
+  n9 [label="id" fontcolor="#1a5fb4"];
+  n8 -> n9;
+  n4 -> n8;
+  n0 -> n4;
+}

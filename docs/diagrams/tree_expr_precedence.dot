@@ -1,0 +1,30 @@
+digraph T {
+  node [fontname="Helvetica" fontsize=12 shape=plaintext];
+  edge [arrowhead=none];
+  labelloc="t"; label="Precedence grammar (only tree)"; fontname="Helvetica"; fontsize=13;
+  n0 [label="E"];
+  n1 [label="E"];
+  n2 [label="T"];
+  n3 [label="F"];
+  n4 [label="id" fontcolor="#1a5fb4"];
+  n3 -> n4;
+  n2 -> n3;
+  n1 -> n2;
+  n0 -> n1;
+  n5 [label="+" fontcolor="#1a5fb4"];
+  n0 -> n5;
+  n6 [label="T"];
+  n7 [label="T"];
+  n8 [label="F"];
+  n9 [label="id" fontcolor="#1a5fb4"];
+  n8 -> n9;
+  n7 -> n8;
+  n6 -> n7;
+  n10 [label="*" fontcolor="#1a5fb4"];
+  n6 -> n10;
+  n11 [label="F"];
+  n12 [label="id" fontcolor="#1a5fb4"];
+  n11 -> n12;
+  n6 -> n11;
+  n0 -> n6;
+}

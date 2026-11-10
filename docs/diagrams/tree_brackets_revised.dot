@@ -1,0 +1,28 @@
+digraph T {
+  node [fontname="Helvetica" fontsize=12 shape=plaintext];
+  edge [arrowhead=none];
+  labelloc="t"; label="Revised grammar (only tree)"; fontname="Helvetica"; fontsize=13;
+  n0 [label="S"];
+  n1 [label="B"];
+  n2 [label="(" fontcolor="#1a5fb4"];
+  n1 -> n2;
+  n3 [label=")" fontcolor="#1a5fb4"];
+  n1 -> n3;
+  n0 -> n1;
+  n4 [label="S"];
+  n5 [label="B"];
+  n6 [label="(" fontcolor="#1a5fb4"];
+  n5 -> n6;
+  n7 [label=")" fontcolor="#1a5fb4"];
+  n5 -> n7;
+  n4 -> n5;
+  n8 [label="S"];
+  n9 [label="B"];
+  n10 [label="(" fontcolor="#1a5fb4"];
+  n9 -> n10;
+  n11 [label=")" fontcolor="#1a5fb4"];
+  n9 -> n11;
+  n8 -> n9;
+  n4 -> n8;
+  n0 -> n4;
+}

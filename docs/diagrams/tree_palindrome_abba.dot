@@ -1,0 +1,20 @@
+digraph T {
+  node [fontname="Helvetica" fontsize=12 shape=plaintext];
+  edge [arrowhead=none];
+  labelloc="t"; label="abba"; fontname="Helvetica"; fontsize=13;
+  n0 [label="S"];
+  n1 [label="a" fontcolor="#1a5fb4"];
+  n0 -> n1;
+  n2 [label="S"];
+  n3 [label="b" fontcolor="#1a5fb4"];
+  n2 -> n3;
+  n4 [label="S"];
+  n5 [label="ε" fontcolor="#1a5fb4"];
+  n4 -> n5;
+  n2 -> n4;
+  n6 [label="b" fontcolor="#1a5fb4"];
+  n2 -> n6;
+  n0 -> n2;
+  n7 [label="a" fontcolor="#1a5fb4"];
+  n0 -> n7;
+}
