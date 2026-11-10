@@ -121,7 +121,7 @@ def expr():
     print(f"   LL(1) conflicts: {len(conflicts)} -> deterministic parsing with one-token look-ahead")
     ok, steps = predictive_parse(EXPR_LL1, w)
     sub(f"Predictive parser stack moves on id+id*id  ->  {verdict(ok)}")
-    print(f"   {'stack (top at right)':<22}{'input':<18}action")
+    print(f"   {'stack (top at left)':<22}{'input':<18}action")
     for st, inp, act in steps:
         print(f"   {st:<22}{inp:<18}{act}")
     sub("Test strings")
