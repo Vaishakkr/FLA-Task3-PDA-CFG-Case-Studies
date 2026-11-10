@@ -1,7 +1,7 @@
 # Case Studies with Pushdown Automata and Context-Free Grammars
 
 **Course:** 21CSC301T Formal Language and Automata, CLA-2, Assessment Task 3
-**Team:** K R Vaishak (RA2411026050018) and Deepak V F (RA2411026050015), B.Tech AIML 'A', III year
+**Student:** K R Vaishak (RA2411026050018), B.Tech AIML 'A', III year
 **Faculty:** Dr. C. Gunasundari, SRM IST Tiruchirappalli
 
 There are three case studies. Each one has a CFG, a PDA, derivations and stack moves,
